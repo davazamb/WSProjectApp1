@@ -20,6 +20,11 @@ namespace ClienteWCF
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             var identificacion = txtIdentificar.Text;
+            using (WSPersonas.WSPersonasClient client = new WSPersonas.WSPersonasClient())
+            {
+                var persona = client.ObtenerPersona(identificacion);
+                var nombre = persona.Nombre;
+            }
         }
     }
 }

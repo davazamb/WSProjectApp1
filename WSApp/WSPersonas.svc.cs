@@ -18,9 +18,13 @@ namespace WSApp
             {
                 return new Persona() { Nombre = "David", Edad = 31 };
             }
-            else if (Identificacion == "0")
+            else if (Identificacion == "1")
             {
                 return new Persona() { Nombre = "Isane", Edad = 30 };
+            }
+            else if (Identificacion == "2")
+            {
+                return new Persona() { Nombre = "Maria", Edad = 12 };
             }
             else
             {

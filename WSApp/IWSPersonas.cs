@@ -30,7 +30,9 @@ namespace WSApp
     [DataContract]
     public class BaseRespuesta
     {
+        [DataMember]
         public string MensajeRespuesta { get; set; }
+        [DataMember]
         public string Error { get; set; }
     }
     // Utilice un contrato de datos, como se ilustra en el ejemplo siguiente, para agregar tipos compuestos a las operaciones de servicio.
